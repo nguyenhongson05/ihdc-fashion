@@ -121,7 +121,7 @@ export default function Hero() {
             <span>{HERO_SLIDES[activeSlide].label}</span>
           </p>
           <h1><span>Mỗi tập thể</span><span>một bản sắc.</span></h1>
-          <a className="hero-cta" href="#giai-phap">Khám phá IHDC <span aria-hidden="true">↘</span></a>
+          <a className="hero-cta" href="#lien-he">Nhận tư vấn <span aria-hidden="true">↘</span></a>
         </div>
       </div>
 

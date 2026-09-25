@@ -1,9 +1,8 @@
 export const navigation = [
   ['Trang chủ', '#trang-chu'],
-  ['Giới thiệu', '#cau-chuyen'],
+  ['Giới thiệu', '#gioi-thieu'],
   ['Sản phẩm', '#san-pham'],
   ['Giải pháp', '#giai-phap'],
-  ['Bản sắc Việt', '#van-hoa'],
   ['Bộ sưu tập', '#bo-suu-tap'],
   ['Dự án', '#du-an'],
   ['Liên hệ', '#lien-he'],
@@ -13,30 +12,26 @@ export const solutions = [
   {
     number: '01',
     title: 'Doanh nghiệp',
-    copy: 'Đồng phục góp phần hoàn thiện hình ảnh và giá trị thương hiệu.',
-    image: '/images/categories/corporate.jpg',
-    position: 'center 63%',
+    image: '/images/editorial/category-corporate.jpg',
+    position: 'center',
   },
   {
     number: '02',
     title: 'Trường học',
-    copy: 'Giải pháp đồng phục phù hợp với hình ảnh và tinh thần tập thể.',
-    image: '/images/categories/school.jpg',
-    position: 'center 54%',
+    image: '/images/editorial/category-school.jpg',
+    position: 'center',
   },
   {
     number: '03',
     title: 'Thể thao',
-    copy: 'Thiết kế polo đồng hành cùng Giải Golf kỷ niệm 30 năm phong trào DNT Việt Nam.',
-    image: '/images/projects/golf.jpg',
-    position: 'center 64%',
+    image: '/images/editorial/category-sport.jpg',
+    position: 'center',
   },
   {
     number: '04',
     title: 'Tập thể',
-    copy: 'Một ngôn ngữ đồng phục chung để kết nối từng thành viên.',
-    image: '/images/categories/collective.jpg',
-    position: 'center 69%',
+    image: '/images/editorial/category-collective-showroom.jpg',
+    position: 'center',
   },
 ]
 
@@ -88,6 +83,33 @@ export const products = [
     detail: 'Thiết kế theo tập thể',
     image: '/images/products/kids-school.jpg',
     position: 'center 61%',
+  },
+]
+
+export const collections = [
+  {
+    name: 'Polo Signature',
+    detail: 'Thoáng nhẹ, chỉn chu mỗi ngày.',
+    image: '/images/editorial/polo-signature.png',
+    position: 'center',
+  },
+  {
+    name: 'Sơ mi xanh IHDC',
+    detail: 'Bề mặt mượt, phom dáng linh hoạt.',
+    image: '/images/editorial/shirt-blue.jpg',
+    position: 'center',
+  },
+  {
+    name: 'Sơ mi Seamless',
+    detail: 'Liền mạch và mềm nhẹ khi vận động.',
+    image: '/images/editorial/seamless-shirt.jpg',
+    position: 'center',
+  },
+  {
+    name: 'Polo Kids',
+    detail: 'Êm mềm, bền bỉ cho ngày năng động.',
+    image: '/images/editorial/polo-kids.jpg',
+    position: 'center',
   },
 ]
 

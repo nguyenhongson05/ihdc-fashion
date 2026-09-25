@@ -2,12 +2,13 @@ import Header from './components/Header'
 import Hero from './components/Hero'
 import Solutions from './components/Solutions'
 import BrandStory from './components/BrandStory'
-import CultureStory from './components/CultureStory'
+import ProcessTimeline from './components/ProcessTimeline'
+import Products from './components/Products'
 import Collection from './components/Collection'
-import Materials from './components/Materials'
 import Projects from './components/Projects'
 import FinalCTA from './components/FinalCTA'
 import Footer from './components/Footer'
+import AiConsultant from './components/AiConsultant'
 import './editorial.css'
 
 function App() {
@@ -17,12 +18,13 @@ function App() {
       <Hero />
       <Solutions />
       <BrandStory />
-      <CultureStory />
+      <ProcessTimeline />
+      <Products />
       <Collection />
-      <Materials />
       <Projects />
       <FinalCTA />
       <Footer />
+      <AiConsultant />
     </main>
   )
 }

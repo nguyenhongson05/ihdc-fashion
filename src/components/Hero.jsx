@@ -1,22 +1,24 @@
 import { useEffect, useRef, useState } from 'react'
-import collectiveHero from '../assets/ihdc-collective-hero.png'
 
 const HERO_SLIDES = [
   {
-    image: collectiveHero,
-    alt: 'Tập thể trong trang phục đen trắng của IHDC Fashion',
+    image: '/images/hero/catalogue-page-1-mountains.png',
+    modelImage: '/images/hero/catalogue-page-1-model.png',
+    alt: 'Người mẫu nam mặc sơ mi xanh IHDC trước khung cảnh núi',
     label: 'Collective',
-    position: 'center center',
+    position: 'center 46%',
   },
   {
-    image: '/images/hero/collective.jpg',
-    alt: 'Tập thể trong trang phục polo IHDC',
+    image: '/images/hero/catalogue-ihdc-team-hero.jpg',
+    mobileImage: '/images/hero/catalogue-ihdc-team-hero-mobile.jpg',
+    alt: 'Tập thể đội ngũ IHDC đứng cùng nhau',
     label: 'Uniform identity',
-    position: 'center 76%',
+    position: 'center 38%',
   },
   {
-    image: '/images/projects/golf.jpg',
-    alt: 'Tập thể trong đồng phục golf của IHDC',
+    image: '/images/hero/catalogue-school-group-hero.jpg',
+    mobileImage: '/images/hero/catalogue-school-group-hero-mobile.jpg',
+    alt: 'Tập thể học sinh mặc đồng phục IHDC trong lớp học',
     label: 'On the move',
     position: 'center 38%',
   },
@@ -90,12 +92,22 @@ export default function Hero() {
             key={slide.image}
             aria-hidden={index !== activeSlide}
           >
-            <img
-              src={slide.image}
-              alt={index === activeSlide ? slide.alt : ''}
-              style={{ objectPosition: slide.position }}
-              fetchPriority={index === 0 ? 'high' : 'auto'}
-            />
+            {slide.modelImage ? (
+              <div className="hero-catalogue-visual">
+                <img className="hero-catalogue-mountains" src={slide.image} alt="" aria-hidden="true" fetchPriority="high" />
+                <img className="hero-catalogue-model" src={slide.modelImage} alt={index === activeSlide ? slide.alt : ''} />
+              </div>
+            ) : (
+              <picture>
+                {slide.mobileImage && <source media="(max-width: 760px)" srcSet={slide.mobileImage} />}
+                <img
+                  src={slide.image}
+                  alt={index === activeSlide ? slide.alt : ''}
+                  style={{ objectPosition: slide.position }}
+                  fetchPriority="auto"
+                />
+              </picture>
+            )}
           </div>
         ))}
       </div>

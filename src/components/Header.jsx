@@ -15,7 +15,7 @@ export default function Header() {
         <span className="brand-mark">IHDC</span><span className="brand-sub">Fashion</span>
       </a>
       <nav className={`site-nav ${open ? 'is-open' : ''}`} aria-label="Điều hướng chính">
-        {navigation.filter(([, href]) => ['#cau-chuyen', '#giai-phap', '#van-hoa', '#bo-suu-tap', '#du-an'].includes(href)).map(([label, href]) => <a key={label} href={href} onClick={closeMenu}>{label}</a>)}
+        {navigation.map(([label, href]) => <a key={label} href={href} onClick={closeMenu}>{label}</a>)}
         <a className="nav-consult-mobile" href="#lien-he" onClick={closeMenu}>Nhận tư vấn <ArrowUpRight /></a>
       </nav>
       <div className="header-actions">
